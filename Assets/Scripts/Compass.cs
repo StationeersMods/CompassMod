@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Assets.Scripts.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 namespace compassmod
 {
@@ -16,6 +15,8 @@ namespace compassmod
         // Update is called once per frame
         void Update()
         {
+            if (!(bool) (Object) PlayerStateWindow.Instance || !PlayerStateWindow.Instance.IsVisible || !(bool) (Object) PlayerStateWindow.Instance.Parent)
+                return;
             var angle = EulerAnglesY();
             CompassImage.uvRect =new Rect(angle/360f, 0f, 1f, 1f);
             NeedleText.text = angle.ToString("F0") + "°";
@@ -26,13 +27,11 @@ namespace compassmod
             try
             {
                 return (PlayerStateWindow.Instance.Parent.EntityRotation.eulerAngles.y + 180.0f) % 360.0f;
-                //return PlayerStateWindow.Instance.Parent.EntityRotation.eulerAngles.y;
             }
             catch (Exception ex)
             {
                 return 0f;
             }
-
         }
     }
 }

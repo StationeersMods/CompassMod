@@ -2,18 +2,30 @@
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>[JIX] Compass Mod [StationeersMods]</Name>
   <Author>Example</Author>
-  <Version>0.2.5116.23239.1</Version>
+  <Version>0.2.5116.23239.2</Version>
   <Description>[h1]Compass Mod[/h1]
-[b]WARNING:[/b] This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.
-See: https://github.com/jixxed/StationeersMods
+    [b]WARNING:[/b] This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.
+    See: https://github.com/jixxed/StationeersMods
 
-Adds a compass to the top of the HUD with NWSE markings, making navigation and orientation a bit easier.
-Does not come with any additional markers on the compass bar.
+    Adds a compass to the top of the HUD with NWSE markings, making navigation and orientation a bit easier.
+    Does not come with any additional markers on the compass bar.
 
-https://github.com/StationeersMods/CompassMod
+    https://github.com/StationeersMods/CompassMod
   </Description>
-  <InGameDescription>
-<![CDATA[<size="30"><color=#ffa500> Compass Mod </color></size>
+  <ChangeLog>
+    [h3]Version 0.2.5116.23239.2:[/h3]
+    [list]
+    [*]Code optimization
+    [/list] 
+  </ChangeLog>
+  <WorkshopHandle>3303906019</WorkshopHandle>
+  <Tags>
+    <Tag>StationeersMods</Tag>
+  </Tags>
+  <Dependencies />
+  <LoadBefore />
+  <LoadAfter />
+  <InGameDescription><![CDATA[<size="30"><color=#ffa500> Compass Mod </color></size>
 <b>WARNING:</b> <color=#ff0000>This is a StationeersMods Plugin Mod. It requires Bepinex to be installed with the StationeersMods plugin.</color>
 See: https://github.com/jixxed/StationeersMods
 
@@ -21,7 +33,5 @@ Adds a compass to the top of the HUD with NWSE markings, making navigation and o
 Does not come with any additional markers on the compass bar.
 
 https://github.com/StationeersMods/CompassMod
-]]>
-  </InGameDescription>
-  <Tags />
+]]></InGameDescription>
 </ModMetadata>
